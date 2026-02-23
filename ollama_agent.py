@@ -1,24 +1,86 @@
 import json
 import os
 import re
-import requests
+import sys
 from typing import Any, Dict, Optional
+
+import anyio
+import requests
+from mcp.client.session import ClientSession
+from mcp.client.stdio import StdioServerParameters, stdio_client
 
 # ---- Config ----
 OLLAMA_URL = os.getenv("OLLAMA_URL", "http://127.0.0.1:11434")
 OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "qwen3:8b")
-API_BASE = os.getenv("API_BASE", "http://127.0.0.1:8000")  # we'll call the same endpoint directly for speed
+API_BASE = os.getenv("API_BASE", "http://127.0.0.1:8000")
+MCP_SERVER_SCRIPT = os.getenv("MCP_SERVER_SCRIPT", "mcp_server.py")
 
-# If you want *strictly* MCP here, we can do that next.
-# Fastest path: call your tool endpoint directly (same logic as MCP tool).
-def best_second_items(unit_id: str, required_item: str, min_games: int = 1):
-    r = requests.get(
-        f"{API_BASE}/unit/{unit_id}/best_second_items_given",
-        params={"required_item": required_item, "min_games": min_games},
-        timeout=30,
+
+def _parse_json_value_loose(text: str) -> Any:
+    try:
+        return json.loads(text)
+    except json.JSONDecodeError:
+        # try to extract first JSON object/array block
+        m = re.search(r"(\{.*\}|\[.*\])", text, flags=re.DOTALL)
+        if not m:
+            return None
+        try:
+            return json.loads(m.group(1))
+        except json.JSONDecodeError:
+            return None
+
+
+def _decode_mcp_tool_result(result: Any) -> Any:
+    if getattr(result, "isError", False):
+        raise RuntimeError(f"MCP tool returned error: {result}")
+
+    structured = getattr(result, "structuredContent", None)
+    if structured is not None:
+        # FastMCP may wrap non-dict outputs if structured output is enabled.
+        if isinstance(structured, dict) and set(structured.keys()) == {"result"}:
+            return structured["result"]
+        return structured
+
+    for block in getattr(result, "content", []) or []:
+        text = getattr(block, "text", None)
+        if not text:
+            continue
+        parsed = _parse_json_value_loose(text)
+        if parsed is not None:
+            return parsed
+        return text
+
+    raise RuntimeError("MCP tool returned no content")
+
+
+async def _best_second_items_mcp(unit_id: str, required_item: str, min_games: int = 1):
+    env = dict(os.environ)
+    env["API_BASE"] = API_BASE
+
+    server_params = StdioServerParameters(
+        command=sys.executable,
+        args=[MCP_SERVER_SCRIPT],
+        env=env,
+        cwd=os.path.dirname(os.path.abspath(__file__)),
     )
-    r.raise_for_status()
-    return r.json()
+
+    async with stdio_client(server_params) as (read_stream, write_stream):
+        async with ClientSession(read_stream, write_stream) as session:
+            await session.initialize()
+            result = await session.call_tool(
+                "best_second_items",
+                {
+                    "unit_id": unit_id,
+                    "required_item": required_item,
+                    "min_games": min_games,
+                },
+            )
+            return _decode_mcp_tool_result(result)
+
+
+# Strict MCP path: call tools only through the MCP server.
+def best_second_items(unit_id: str, required_item: str, min_games: int = 1):
+    return anyio.run(_best_second_items_mcp, unit_id, required_item, min_games)
 
 SYSTEM = """You are a TFT stats assistant.
 You MUST respond in one of two ways:
@@ -53,17 +115,8 @@ def ollama_chat(messages):
     return r.json()["message"]["content"]
 
 def parse_json_loose(text: str) -> Optional[Dict[str, Any]]:
-    try:
-        return json.loads(text)
-    except json.JSONDecodeError:
-        # try to extract first {...} block
-        m = re.search(r"\{.*\}", text, flags=re.DOTALL)
-        if not m:
-            return None
-        try:
-            return json.loads(m.group(0))
-        except json.JSONDecodeError:
-            return None
+    parsed = _parse_json_value_loose(text)
+    return parsed if isinstance(parsed, dict) else None
 
 def main():
     DEFAULT_MIN_GAMES = 3
@@ -89,6 +142,9 @@ def main():
             args = obj.get("args", {})
             unit_id = args.get("unit_id")
             required_item = args.get("required_item")
+            if not unit_id or not required_item:
+                print("Tool call missing required args (unit_id, required_item).\n")
+                continue
             # Keep tool behavior deterministic; do not let the model silently raise thresholds.
             requested_min_games = args.get("min_games")
             if requested_min_games is None:
@@ -100,7 +156,11 @@ def main():
                     min_games = DEFAULT_MIN_GAMES
                 min_games = max(DEFAULT_MIN_GAMES, min_games)
 
-            data = best_second_items(unit_id, required_item, min_games=min_games)
+            try:
+                data = best_second_items(unit_id, required_item, min_games=min_games)
+            except Exception as e:
+                print(f"MCP tool call failed: {e}\n")
+                continue
 
             # Feed tool results back to model to write a human answer
             messages.append({"role": "assistant", "content": raw})
