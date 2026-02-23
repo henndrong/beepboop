@@ -1,0 +1,1518 @@
+{
+  "metadata": {
+    "data_version": "6",
+    "match_id": "NA1_5494836004",
+    "participants": [
+      "Z0KICWyj9FINf7kxmIx6eBCAdppD2OUHQs6pSujeOYhC4Yu6pFpmN0GIStJJQAg4WnT1j-tRbSd4GQ",
+      "LozpZzUGUb6C1BRn0E-jI4WOYGJDPD-bB7WY6KhQZGI7wAG3goUmgQPGAdvKa5j-d-9Rz1FnWz8k_A",
+      "EnBF-AqBCnllAIZT76ZeMEqHbXK--AK8X37dArr-iP8A67GJO945eUbTHqnwMI_zXXaat3vfWr_jtg",
+      "d6NgNJWgT5bk_sgxX6BbYuR-kYjpSxjr8bM0rQXq__74JtDxTxPJS2zkHh_0NYxPadfdyeHV5p6JaQ",
+      "oBjjrOHih4Tbt8pbdeemtewZHziXoASxfNjvq1_v3cUJ0EeSW7O7Kwv1EXzpFTMOblKaYSeBAyzyxQ",
+      "akH3OUjzpmDsKnSvx16GIGrldgPo_fm_YEsrW8Ky2dVAotrTT7BjaGEiml5-hS61a9meVO1W-a-H_Q",
+      "UydJVwCtohg7JrxEEoIk_5pl1sZEMJ5BVFXcXGxvGZR6Rqn-vFEP-k-MCVA-mWRYQ_TYEKOZHf94tA",
+      "wvo7ATRgMQVCeBq6vQSYAlz_nxfzuMG82I-wL1cagT4Ud6d6sycXo0K5eC6pnbazVhptndqfoLg6TA"
+    ]
+  },
+  "info": {
+    "endOfGameResult": "GameComplete",
+    "gameCreation": 1771395037000,
+    "gameId": 5494836004,
+    "game_datetime": 1771397192001,
+    "game_length": 2127.59130859375,
+    "game_version": "Linux Version 16.3.745.7600 (Feb 10 2026/14:45:54) [PUBLIC] <Releases/16.3>",
+    "mapId": 22,
+    "participants": [
+      {
+        "companion": {
+          "content_ID": "0192587d-dd8c-4f69-b95a-8c19eaab5a8b",
+          "item_ID": 125001,
+          "skin_ID": 1,
+          "species": "PetChibiNeeko"
+        },
+        "gold_left": 0,
+        "last_round": 28,
+        "level": 9,
+        "missions": {
+          "PlayerScore2": 82
+        },
+        "placement": 6,
+        "players_eliminated": 0,
+        "puuid": "Z0KICWyj9FINf7kxmIx6eBCAdppD2OUHQs6pSujeOYhC4Yu6pFpmN0GIStJJQAg4WnT1j-tRbSd4GQ",
+        "riotIdGameName": "Invern",
+        "riotIdTagline": "Monk",
+        "time_eliminated": 1641.7979736328125,
+        "total_damage_to_players": 72,
+        "traits": [
+          {
+            "name": "TFT16_Bilgewater",
+            "num_units": 1,
+            "style": 0,
+            "tier_current": 0,
+            "tier_total": 4
+          },
+          {
+            "name": "TFT16_Blacksmith",
+            "num_units": 1,
+            "style": 3,
+            "tier_current": 1,
+            "tier_total": 1
+          },
+          {
+            "name": "TFT16_Defender",
+            "num_units": 1,
+            "style": 0,
+            "tier_current": 0,
+            "tier_total": 3
+          },
+          {
+            "name": "TFT16_Freljord",
+            "num_units": 1,
+            "style": 0,
+            "tier_current": 0,
+            "tier_total": 3
+          },
+          {
+            "name": "TFT16_Gunslinger",
+            "num_units": 2,
+            "style": 1,
+            "tier_current": 1,
+            "tier_total": 2
+          },
+          {
+            "name": "TFT16_HexMech",
+            "num_units": 1,
+            "style": 3,
+            "tier_current": 1,
+            "tier_total": 1
+          },
+          {
+            "name": "TFT16_Juggernaut",
+            "num_units": 2,
+            "style": 1,
+            "tier_current": 1,
+            "tier_total": 3
+          },
+          {
+            "name": "TFT16_Longshot",
+            "num_units": 1,
+            "style": 0,
+            "tier_current": 0,
+            "tier_total": 4
+          },
+          {
+            "name": "TFT16_Piltover",
+            "num_units": 4,
+            "style": 2,
+            "tier_current": 2,
+            "tier_total": 3
+          },
+          {
+            "name": "TFT16_ShyvanaUnique",
+            "num_units": 1,
+            "style": 3,
+            "tier_current": 1,
+            "tier_total": 1
+          },
+          {
+            "name": "TFT16_Soulbound",
+            "num_units": 1,
+            "style": 3,
+            "tier_current": 1,
+            "tier_total": 1
+          },
+          {
+            "name": "TFT16_Warden",
+            "num_units": 4,
+            "style": 2,
+            "tier_current": 3,
+            "tier_total": 4
+          },
+          {
+            "name": "TFT16_Zaun",
+            "num_units": 1,
+            "style": 0,
+            "tier_current": 0,
+            "tier_total": 3
+          }
+        ],
+        "units": [
+          {
+            "character_id": "TFT16_Caitlyn",
+            "itemNames": [],
+            "name": "",
+            "rarity": 0,
+            "tier": 2
+          },
+          {
+            "character_id": "TFT16_Vi",
+            "itemNames": [],
+            "name": "",
+            "rarity": 1,
+            "tier": 3
+          },
+          {
+            "character_id": "TFT16_Nautilus",
+            "itemNames": [],
+            "name": "",
+            "rarity": 2,
+            "tier": 2
+          },
+          {
+            "character_id": "TFT16_Loris",
+            "itemNames": [
+              "TFT_Item_Crownguard",
+              "TFT_Item_SpectralGauntlet",
+              "TFT_Item_Redemption"
+            ],
+            "name": "",
+            "rarity": 2,
+            "tier": 2
+          },
+          {
+            "character_id": "TFT16_Braum",
+            "itemNames": [],
+            "name": "",
+            "rarity": 4,
+            "tier": 1
+          },
+          {
+            "character_id": "TFT16_Ornn",
+            "itemNames": [
+              "TFT_Item_SparringGloves"
+            ],
+            "name": "",
+            "rarity": 6,
+            "tier": 2
+          },
+          {
+            "character_id": "TFT16_Lucian",
+            "itemNames": [
+              "TFT_Item_RapidFireCannon",
+              "TFT_Item_MadredsBloodrazor"
+            ],
+            "name": "",
+            "rarity": 6,
+            "tier": 1
+          },
+          {
+            "character_id": "TFT16_Shyvana",
+            "itemNames": [],
+            "name": "",
+            "rarity": 6,
+            "tier": 1
+          },
+          {
+            "character_id": "TFT16_THex",
+            "itemNames": [
+              "TFT_Item_InfinityEdge",
+              "TFT_Item_Deathblade",
+              "TFT_Item_PowerGauntlet"
+            ],
+            "name": "",
+            "rarity": 6,
+            "tier": 2
+          }
+        ],
+        "win": false
+      },
+      {
+        "companion": {
+          "content_ID": "ebc79bf1-549c-46d5-a889-1ff2260d4068",
+          "item_ID": 4015,
+          "skin_ID": 15,
+          "species": "PetMiner"
+        },
+        "gold_left": 1,
+        "last_round": 37,
+        "level": 10,
+        "missions": {
+          "PlayerScore2": 211
+        },
+        "placement": 2,
+        "players_eliminated": 1,
+        "puuid": "LozpZzUGUb6C1BRn0E-jI4WOYGJDPD-bB7WY6KhQZGI7wAG3goUmgQPGAdvKa5j-d-9Rz1FnWz8k_A",
+        "riotIdGameName": "cash charlie",
+        "riotIdTagline": "NA2",
+        "time_eliminated": 2117.871826171875,
+        "total_damage_to_players": 137,
+        "traits": [
+          {
+            "name": "TFT16_Brawler",
+            "num_units": 2,
+            "style": 1,
+            "tier_current": 1,
+            "tier_total": 3
+          },
+          {
+            "name": "TFT16_Defender",
+            "num_units": 2,
+            "style": 1,
+            "tier_current": 1,
+            "tier_total": 3
+          },
+          {
+            "name": "TFT16_Invoker",
+            "num_units": 1,
+            "style": 0,
+            "tier_current": 0,
+            "tier_total": 2
+          },
+          {
+            "name": "TFT16_Ionia",
+            "num_units": 2,
+            "style": 0,
+            "tier_current": 0,
+            "tier_total": 4
+          },
+          {
+            "name": "TFT16_Juggernaut",
+            "num_units": 2,
+            "style": 1,
+            "tier_current": 1,
+            "tier_total": 3
+          },
+          {
+            "name": "TFT16_Longshot",
+            "num_units": 2,
+            "style": 1,
+            "tier_current": 1,
+            "tier_total": 4
+          },
+          {
+            "name": "TFT16_Noxus",
+            "num_units": 1,
+            "style": 0,
+            "tier_current": 0,
+            "tier_total": 4
+          },
+          {
+            "name": "TFT16_ShyvanaUnique",
+            "num_units": 1,
+            "style": 3,
+            "tier_current": 1,
+            "tier_total": 1
+          },
+          {
+            "name": "TFT16_Sorcerer",
+            "num_units": 2,
+            "style": 1,
+            "tier_current": 1,
+            "tier_total": 3
+          },
+          {
+            "name": "TFT16_Targon",
+            "num_units": 1,
+            "style": 4,
+            "tier_current": 1,
+            "tier_total": 1
+          },
+          {
+            "name": "TFT16_Yordle",
+            "num_units": 6,
+            "style": 2,
+            "tier_current": 3,
+            "tier_total": 5
+          },
+          {
+            "name": "TFT16_Zaun",
+            "num_units": 1,
+            "style": 0,
+            "tier_current": 0,
+            "tier_total": 3
+          }
+        ],
+        "units": [
+          {
+            "character_id": "TFT16_Rumble",
+            "itemNames": [],
+            "name": "",
+            "rarity": 0,
+            "tier": 2
+          },
+          {
+            "character_id": "TFT16_Teemo",
+            "itemNames": [
+              "TFT_Item_SpearOfShojin",
+              "TFT_Item_StatikkShiv",
+              "TFT_Item_AdaptiveHelm"
+            ],
+            "name": "",
+            "rarity": 1,
+            "tier": 2
+          },
+          {
+            "character_id": "TFT16_Kobuko",
+            "itemNames": [
+              "TFT_Item_ChainVest"
+            ],
+            "name": "",
+            "rarity": 2,
+            "tier": 3
+          },
+          {
+            "character_id": "TFT16_Kennen",
+            "itemNames": [
+              "TFT_Item_NightHarvester",
+              "TFT_Item_AdaptiveHelm",
+              "TFT_Item_SteraksGage"
+            ],
+            "name": "",
+            "rarity": 2,
+            "tier": 3
+          },
+          {
+            "character_id": "TFT16_Taric",
+            "itemNames": [],
+            "name": "",
+            "rarity": 4,
+            "tier": 2
+          },
+          {
+            "character_id": "TFT16_Wukong",
+            "itemNames": [],
+            "name": "",
+            "rarity": 4,
+            "tier": 2
+          },
+          {
+            "character_id": "TFT16_Veigar",
+            "itemNames": [
+              "TFT_Item_RabadonsDeathcap",
+              "TFT_Item_SpearOfShojin",
+              "TFT_Item_RabadonsDeathcap"
+            ],
+            "name": "",
+            "rarity": 4,
+            "tier": 2
+          },
+          {
+            "character_id": "TFT16_Swain",
+            "itemNames": [],
+            "name": "",
+            "rarity": 4,
+            "tier": 1
+          },
+          {
+            "character_id": "TFT16_Shyvana",
+            "itemNames": [],
+            "name": "",
+            "rarity": 6,
+            "tier": 2
+          },
+          {
+            "character_id": "TFT16_Ziggs",
+            "itemNames": [
+              "TFT_Item_RabadonsDeathcap",
+              "TFT_Item_JeweledGauntlet",
+              "TFT_Item_RapidFireCannon"
+            ],
+            "name": "",
+            "rarity": 6,
+            "tier": 2
+          }
+        ],
+        "win": true
+      },
+      {
+        "companion": {
+          "content_ID": "6b374913-bcf6-4808-ad20-211f589cf736",
+          "item_ID": 41,
+          "skin_ID": 41,
+          "species": "PetTFTAvatar"
+        },
+        "gold_left": 1,
+        "last_round": 34,
+        "level": 9,
+        "missions": {
+          "PlayerScore2": 198
+        },
+        "placement": 4,
+        "players_eliminated": 0,
+        "puuid": "EnBF-AqBCnllAIZT76ZeMEqHbXK--AK8X37dArr-iP8A67GJO945eUbTHqnwMI_zXXaat3vfWr_jtg",
+        "riotIdGameName": "muppysofto",
+        "riotIdTagline": "5055",
+        "time_eliminated": 1968.5401611328125,
+        "total_damage_to_players": 120,
+        "traits": [
+          {
+            "name": "TFT16_Brawler",
+            "num_units": 1,
+            "style": 0,
+            "tier_current": 0,
+            "tier_total": 3
+          },
+          {
+            "name": "TFT16_Defender",
+            "num_units": 2,
+            "style": 1,
+            "tier_current": 1,
+            "tier_total": 3
+          },
+          {
+            "name": "TFT16_Freljord",
+            "num_units": 1,
+            "style": 0,
+            "tier_current": 0,
+            "tier_total": 3
+          },
+          {
+            "name": "TFT16_Gunslinger",
+            "num_units": 2,
+            "style": 1,
+            "tier_current": 1,
+            "tier_total": 2
+          },
+          {
+            "name": "TFT16_Juggernaut",
+            "num_units": 1,
+            "style": 0,
+            "tier_current": 0,
+            "tier_total": 3
+          },
+          {
+            "name": "TFT16_KindredUnique",
+            "num_units": 1,
+            "style": 3,
+            "tier_current": 1,
+            "tier_total": 1
+          },
+          {
+            "name": "TFT16_Piltover",
+            "num_units": 2,
+            "style": 1,
+            "tier_current": 1,
+            "tier_total": 3
+          },
+          {
+            "name": "TFT16_Rapidfire",
+            "num_units": 2,
+            "style": 1,
+            "tier_current": 1,
+            "tier_total": 4
+          },
+          {
+            "name": "TFT16_Soulbound",
+            "num_units": 1,
+            "style": 3,
+            "tier_current": 1,
+            "tier_total": 1
+          },
+          {
+            "name": "TFT16_Warden",
+            "num_units": 2,
+            "style": 1,
+            "tier_current": 1,
+            "tier_total": 4
+          },
+          {
+            "name": "TFT16_Zaun",
+            "num_units": 5,
+            "style": 2,
+            "tier_current": 2,
+            "tier_total": 3
+          }
+        ],
+        "units": [
+          {
+            "character_id": "TFT16_Vi",
+            "itemNames": [],
+            "name": "",
+            "rarity": 1,
+            "tier": 2
+          },
+          {
+            "character_id": "TFT16_Jinx",
+            "itemNames": [],
+            "name": "",
+            "rarity": 2,
+            "tier": 2
+          },
+          {
+            "character_id": "TFT16_Loris",
+            "itemNames": [],
+            "name": "",
+            "rarity": 2,
+            "tier": 2
+          },
+          {
+            "character_id": "TFT16_DrMundo",
+            "itemNames": [
+              "TFT_Item_NegatronCloak"
+            ],
+            "name": "",
+            "rarity": 2,
+            "tier": 2
+          },
+          {
+            "character_id": "TFT16_Braum",
+            "itemNames": [
+              "TFT_Item_WarmogsArmor",
+              "TFT_Item_Redemption",
+              "TFT_Item_Redemption"
+            ],
+            "name": "",
+            "rarity": 4,
+            "tier": 2
+          },
+          {
+            "character_id": "TFT16_Singed",
+            "itemNames": [
+              "TFT_Item_RedBuff",
+              "TFT_Item_WarmogsArmor"
+            ],
+            "name": "",
+            "rarity": 4,
+            "tier": 2
+          },
+          {
+            "character_id": "TFT16_Warwick",
+            "itemNames": [
+              "TFT_Item_TitansResolve",
+              "TFT_Item_HextechGunblade",
+              "TFT16_Item_DefenderEmblemItem"
+            ],
+            "name": "",
+            "rarity": 4,
+            "tier": 2
+          },
+          {
+            "character_id": "TFT16_Kindred",
+            "itemNames": [
+              "TFT_Item_GuinsoosRageblade",
+              "TFT_Item_LastWhisper",
+              "TFT_Item_HextechGunblade"
+            ],
+            "name": "",
+            "rarity": 6,
+            "tier": 2
+          },
+          {
+            "character_id": "TFT16_Lucian",
+            "itemNames": [],
+            "name": "",
+            "rarity": 6,
+            "tier": 1
+          }
+        ],
+        "win": true
+      },
+      {
+        "companion": {
+          "content_ID": "5601b81d-dfe2-40d7-81c5-4795ac9f6f3f",
+          "item_ID": 91002,
+          "skin_ID": 2,
+          "species": "PetChibiOrianna"
+        },
+        "gold_left": 1,
+        "last_round": 35,
+        "level": 9,
+        "missions": {
+          "PlayerScore2": 204
+        },
+        "placement": 3,
+        "players_eliminated": 2,
+        "puuid": "d6NgNJWgT5bk_sgxX6BbYuR-kYjpSxjr8bM0rQXq__74JtDxTxPJS2zkHh_0NYxPadfdyeHV5p6JaQ",
+        "riotIdGameName": "Eggo",
+        "riotIdTagline": "093",
+        "time_eliminated": 2036.1419677734375,
+        "total_damage_to_players": 122,
+        "traits": [
+          {
+            "name": "TFT16_Brawler",
+            "num_units": 2,
+            "style": 1,
+            "tier_current": 1,
+            "tier_total": 3
+          },
+          {
+            "name": "TFT16_DarkChild",
+            "num_units": 1,
+            "style": 3,
+            "tier_current": 1,
+            "tier_total": 1
+          },
+          {
+            "name": "TFT16_Defender",
+            "num_units": 2,
+            "style": 1,
+            "tier_current": 1,
+            "tier_total": 3
+          },
+          {
+            "name": "TFT16_Explorer",
+            "num_units": 2,
+            "style": 0,
+            "tier_current": 0,
+            "tier_total": 3
+          },
+          {
+            "name": "TFT16_Juggernaut",
+            "num_units": 2,
+            "style": 1,
+            "tier_current": 1,
+            "tier_total": 3
+          },
+          {
+            "name": "TFT16_Magus",
+            "num_units": 2,
+            "style": 1,
+            "tier_current": 1,
+            "tier_total": 2
+          },
+          {
+            "name": "TFT16_Noxus",
+            "num_units": 3,
+            "style": 1,
+            "tier_current": 1,
+            "tier_total": 4
+          },
+          {
+            "name": "TFT16_Piltover",
+            "num_units": 2,
+            "style": 1,
+            "tier_current": 1,
+            "tier_total": 3
+          },
+          {
+            "name": "TFT16_Sorcerer",
+            "num_units": 6,
+            "style": 4,
+            "tier_current": 3,
+            "tier_total": 3
+          },
+          {
+            "name": "TFT16_Zaun",
+            "num_units": 1,
+            "style": 0,
+            "tier_current": 0,
+            "tier_total": 3
+          }
+        ],
+        "units": [
+          {
+            "character_id": "TFT16_Sion",
+            "itemNames": [],
+            "name": "",
+            "rarity": 1,
+            "tier": 1
+          },
+          {
+            "character_id": "TFT16_Neeko",
+            "itemNames": [],
+            "name": "",
+            "rarity": 1,
+            "tier": 1
+          },
+          {
+            "character_id": "TFT16_Vi",
+            "itemNames": [],
+            "name": "",
+            "rarity": 1,
+            "tier": 1
+          },
+          {
+            "character_id": "TFT16_Seraphine",
+            "itemNames": [
+              "TFT_Item_LastWhisper",
+              "TFT16_Item_SorcererEmblemItem",
+              "TFT_Item_SparringGloves"
+            ],
+            "name": "",
+            "rarity": 4,
+            "tier": 2
+          },
+          {
+            "character_id": "TFT16_Swain",
+            "itemNames": [
+              "TFT_Item_Crownguard",
+              "TFT_Item_WarmogsArmor"
+            ],
+            "name": "",
+            "rarity": 4,
+            "tier": 2
+          },
+          {
+            "character_id": "TFT16_Annie",
+            "itemNames": [
+              "TFT_Item_StatikkShiv",
+              "TFT_Item_AdaptiveHelm",
+              "TFT_Item_MadredsBloodrazor"
+            ],
+            "name": "",
+            "rarity": 6,
+            "tier": 2
+          },
+          {
+            "character_id": "TFT16_Brock",
+            "itemNames": [
+              "TFT_Item_Deathblade",
+              "TFT_Item_SteraksGage",
+              "TFT_Item_Bloodthirster"
+            ],
+            "name": "",
+            "rarity": 7,
+            "tier": 2
+          },
+          {
+            "character_id": "TFT16_Mel",
+            "itemNames": [
+              "TFT_Item_Leviathan",
+              "TFT16_Item_SorcererEmblemItem",
+              "TFT_Item_JeweledGauntlet"
+            ],
+            "name": "",
+            "rarity": 6,
+            "tier": 2
+          },
+          {
+            "character_id": "TFT16_AnnieTibbers",
+            "itemNames": [
+              "TFT16_Item_JuggernautEmblemItem",
+              "TFT16_Item_BrawlerEmblemItem",
+              "TFT_Item_Redemption"
+            ],
+            "name": "",
+            "rarity": 9,
+            "tier": 2
+          },
+          {
+            "character_id": "tft16_atakhan",
+            "itemNames": [],
+            "name": "",
+            "rarity": 9,
+            "tier": 1
+          }
+        ],
+        "win": true
+      },
+      {
+        "companion": {
+          "content_ID": "023144c0-80e7-445e-846e-82b0883b9ada",
+          "item_ID": 29033,
+          "skin_ID": 33,
+          "species": "PetDowsie"
+        },
+        "gold_left": 3,
+        "last_round": 34,
+        "level": 9,
+        "missions": {
+          "PlayerScore2": 99
+        },
+        "placement": 5,
+        "players_eliminated": 1,
+        "puuid": "oBjjrOHih4Tbt8pbdeemtewZHziXoASxfNjvq1_v3cUJ0EeSW7O7Kwv1EXzpFTMOblKaYSeBAyzyxQ",
+        "riotIdGameName": "Bruhbruhbruh WHO",
+        "riotIdTagline": "NA1",
+        "time_eliminated": 1980.3558349609375,
+        "total_damage_to_players": 100,
+        "traits": [
+          {
+            "name": "TFT16_Bilgewater",
+            "num_units": 3,
+            "style": 1,
+            "tier_current": 1,
+            "tier_total": 4
+          },
+          {
+            "name": "TFT16_Brawler",
+            "num_units": 2,
+            "style": 1,
+            "tier_current": 1,
+            "tier_total": 3
+          },
+          {
+            "name": "TFT16_Freljord",
+            "num_units": 1,
+            "style": 0,
+            "tier_current": 0,
+            "tier_total": 3
+          },
+          {
+            "name": "TFT16_Glutton",
+            "num_units": 1,
+            "style": 3,
+            "tier_current": 1,
+            "tier_total": 1
+          },
+          {
+            "name": "TFT16_Gunslinger",
+            "num_units": 2,
+            "style": 1,
+            "tier_current": 1,
+            "tier_total": 2
+          },
+          {
+            "name": "TFT16_Harvester",
+            "num_units": 1,
+            "style": 3,
+            "tier_current": 1,
+            "tier_total": 1
+          },
+          {
+            "name": "TFT16_Ionia",
+            "num_units": 1,
+            "style": 0,
+            "tier_current": 0,
+            "tier_total": 4
+          },
+          {
+            "name": "TFT16_Juggernaut",
+            "num_units": 4,
+            "style": 2,
+            "tier_current": 2,
+            "tier_total": 3
+          },
+          {
+            "name": "TFT16_Noxus",
+            "num_units": 1,
+            "style": 0,
+            "tier_current": 0,
+            "tier_total": 4
+          },
+          {
+            "name": "TFT16_ShyvanaUnique",
+            "num_units": 1,
+            "style": 3,
+            "tier_current": 1,
+            "tier_total": 1
+          },
+          {
+            "name": "TFT16_Sorcerer",
+            "num_units": 1,
+            "style": 0,
+            "tier_current": 0,
+            "tier_total": 3
+          },
+          {
+            "name": "TFT16_Soulbound",
+            "num_units": 1,
+            "style": 3,
+            "tier_current": 1,
+            "tier_total": 1
+          },
+          {
+            "name": "TFT16_Vanquisher",
+            "num_units": 1,
+            "style": 0,
+            "tier_current": 0,
+            "tier_total": 4
+          },
+          {
+            "name": "TFT16_Warden",
+            "num_units": 3,
+            "style": 2,
+            "tier_current": 2,
+            "tier_total": 4
+          }
+        ],
+        "units": [
+          {
+            "character_id": "TFT16_Nautilus",
+            "itemNames": [
+              "TFT16_Item_Bilgewater_CaptainsBrew"
+            ],
+            "name": "",
+            "rarity": 2,
+            "tier": 2
+          },
+          {
+            "character_id": "TFT16_MissFortune",
+            "itemNames": [
+              "TFT_Item_InfinityEdge",
+              "TFT16_Item_Bilgewater_DeadmansDagger",
+              "TFT_Item_GuinsoosRageblade"
+            ],
+            "name": "",
+            "rarity": 4,
+            "tier": 2
+          },
+          {
+            "character_id": "TFT16_Wukong",
+            "itemNames": [],
+            "name": "",
+            "rarity": 4,
+            "tier": 2
+          },
+          {
+            "character_id": "TFT16_Braum",
+            "itemNames": [
+              "TFT16_Item_JuggernautEmblemItem",
+              "TFT_Item_BrambleVest",
+              "TFT_Item_NightHarvester"
+            ],
+            "name": "",
+            "rarity": 4,
+            "tier": 2
+          },
+          {
+            "character_id": "TFT16_Swain",
+            "itemNames": [
+              "TFT_Item_FrozenHeart",
+              "TFT_Item_AdaptiveHelm",
+              "TFT16_Item_WardenEmblemItem"
+            ],
+            "name": "",
+            "rarity": 4,
+            "tier": 2
+          },
+          {
+            "character_id": "TFT16_Fiddlesticks",
+            "itemNames": [
+              "TFT_Item_NeedlesslyLargeRod"
+            ],
+            "name": "",
+            "rarity": 6,
+            "tier": 1
+          },
+          {
+            "character_id": "TFT16_Lucian",
+            "itemNames": [
+              "TFT_Item_Morellonomicon"
+            ],
+            "name": "",
+            "rarity": 6,
+            "tier": 1
+          },
+          {
+            "character_id": "TFT16_Shyvana",
+            "itemNames": [
+              "TFT_Item_SpectralGauntlet",
+              "TFT_Item_Bloodthirster",
+              "TFT_Item_GuardianAngel"
+            ],
+            "name": "",
+            "rarity": 6,
+            "tier": 2
+          },
+          {
+            "character_id": "TFT16_TahmKench",
+            "itemNames": [
+              "TFT_Item_ThiefsGloves",
+              "TFT_Item_AdaptiveHelm",
+              "TFT_Item_JeweledGauntlet"
+            ],
+            "name": "",
+            "rarity": 6,
+            "tier": 1
+          }
+        ],
+        "win": false
+      },
+      {
+        "companion": {
+          "content_ID": "d50ab55c-e42f-4022-a556-f2f4644781f9",
+          "item_ID": 14013,
+          "skin_ID": 13,
+          "species": "PetQiyanaDog"
+        },
+        "gold_left": 2,
+        "last_round": 27,
+        "level": 7,
+        "missions": {
+          "PlayerScore2": 78
+        },
+        "placement": 7,
+        "players_eliminated": 0,
+        "puuid": "akH3OUjzpmDsKnSvx16GIGrldgPo_fm_YEsrW8Ky2dVAotrTT7BjaGEiml5-hS61a9meVO1W-a-H_Q",
+        "riotIdGameName": "RamKev",
+        "riotIdTagline": "NA1",
+        "time_eliminated": 1571.365234375,
+        "total_damage_to_players": 46,
+        "traits": [
+          {
+            "name": "TFT16_Defender",
+            "num_units": 2,
+            "style": 1,
+            "tier_current": 1,
+            "tier_total": 3
+          },
+          {
+            "name": "TFT16_Demacia",
+            "num_units": 7,
+            "style": 4,
+            "tier_current": 3,
+            "tier_total": 4
+          },
+          {
+            "name": "TFT16_Heroic",
+            "num_units": 1,
+            "style": 3,
+            "tier_current": 1,
+            "tier_total": 1
+          },
+          {
+            "name": "TFT16_Ionia",
+            "num_units": 1,
+            "style": 0,
+            "tier_current": 0,
+            "tier_total": 4
+          },
+          {
+            "name": "TFT16_Juggernaut",
+            "num_units": 2,
+            "style": 1,
+            "tier_current": 1,
+            "tier_total": 3
+          },
+          {
+            "name": "TFT16_Noxus",
+            "num_units": 1,
+            "style": 0,
+            "tier_current": 0,
+            "tier_total": 4
+          },
+          {
+            "name": "TFT16_Sorcerer",
+            "num_units": 2,
+            "style": 1,
+            "tier_current": 1,
+            "tier_total": 3
+          },
+          {
+            "name": "TFT16_Targon",
+            "num_units": 1,
+            "style": 4,
+            "tier_current": 1,
+            "tier_total": 1
+          },
+          {
+            "name": "TFT16_Warden",
+            "num_units": 1,
+            "style": 0,
+            "tier_current": 0,
+            "tier_total": 4
+          },
+          {
+            "name": "TFT16_Yordle",
+            "num_units": 1,
+            "style": 0,
+            "tier_current": 0,
+            "tier_total": 5
+          }
+        ],
+        "units": [
+          {
+            "character_id": "TFT16_JarvanIV",
+            "itemNames": [],
+            "name": "",
+            "rarity": 0,
+            "tier": 2
+          },
+          {
+            "character_id": "TFT16_Aphelios",
+            "itemNames": [
+              "TFT_Item_RapidFireCannon"
+            ],
+            "name": "",
+            "rarity": 1,
+            "tier": 1
+          },
+          {
+            "character_id": "TFT16_XinZhao",
+            "itemNames": [
+              "TFT_Item_Bloodthirster",
+              "TFT_Item_InfinityEdge",
+              "TFT_Item_TitansResolve"
+            ],
+            "name": "",
+            "rarity": 1,
+            "tier": 3
+          },
+          {
+            "character_id": "TFT16_Poppy",
+            "itemNames": [],
+            "name": "",
+            "rarity": 1,
+            "tier": 2
+          },
+          {
+            "character_id": "TFT16_Garen",
+            "itemNames": [],
+            "name": "",
+            "rarity": 4,
+            "tier": 1
+          },
+          {
+            "character_id": "TFT16_Lux",
+            "itemNames": [
+              "TFT_Item_ArchangelsStaff",
+              "TFT_Item_SpearOfShojin",
+              "TFT_Item_JeweledGauntlet"
+            ],
+            "name": "",
+            "rarity": 4,
+            "tier": 2
+          },
+          {
+            "character_id": "TFT16_Swain",
+            "itemNames": [
+              "TFT_Item_FrozenHeart",
+              "TFT16_Item_DemaciaEmblemItem",
+              "TFT_Item_DragonsClaw"
+            ],
+            "name": "",
+            "rarity": 4,
+            "tier": 1
+          },
+          {
+            "character_id": "TFT16_Galio",
+            "itemNames": [],
+            "name": "",
+            "rarity": 6,
+            "tier": 1
+          }
+        ],
+        "win": false
+      },
+      {
+        "companion": {
+          "content_ID": "a0e9be28-3406-41d4-adac-26af1b15e5be",
+          "item_ID": 133002,
+          "skin_ID": 2,
+          "species": "PetStyleTwoAhri"
+        },
+        "gold_left": 24,
+        "last_round": 22,
+        "level": 7,
+        "missions": {
+          "PlayerScore2": 62
+        },
+        "placement": 8,
+        "players_eliminated": 0,
+        "puuid": "UydJVwCtohg7JrxEEoIk_5pl1sZEMJ5BVFXcXGxvGZR6Rqn-vFEP-k-MCVA-mWRYQ_TYEKOZHf94tA",
+        "riotIdGameName": "Shiitaro",
+        "riotIdTagline": "WHOPP",
+        "time_eliminated": 1242.5537109375,
+        "total_damage_to_players": 19,
+        "traits": [
+          {
+            "name": "TFT16_Caretaker",
+            "num_units": 1,
+            "style": 3,
+            "tier_current": 1,
+            "tier_total": 1
+          },
+          {
+            "name": "TFT16_Defender",
+            "num_units": 2,
+            "style": 1,
+            "tier_current": 1,
+            "tier_total": 3
+          },
+          {
+            "name": "TFT16_Explorer",
+            "num_units": 4,
+            "style": 1,
+            "tier_current": 1,
+            "tier_total": 3
+          },
+          {
+            "name": "TFT16_Huntress",
+            "num_units": 1,
+            "style": 3,
+            "tier_current": 1,
+            "tier_total": 1
+          },
+          {
+            "name": "TFT16_Invoker",
+            "num_units": 2,
+            "style": 1,
+            "tier_current": 1,
+            "tier_total": 2
+          },
+          {
+            "name": "TFT16_Piltover",
+            "num_units": 2,
+            "style": 1,
+            "tier_current": 1,
+            "tier_total": 3
+          },
+          {
+            "name": "TFT16_Slayer",
+            "num_units": 1,
+            "style": 0,
+            "tier_current": 0,
+            "tier_total": 3
+          },
+          {
+            "name": "TFT16_Sorcerer",
+            "num_units": 1,
+            "style": 0,
+            "tier_current": 0,
+            "tier_total": 3
+          },
+          {
+            "name": "TFT16_Zaun",
+            "num_units": 1,
+            "style": 0,
+            "tier_current": 0,
+            "tier_total": 3
+          }
+        ],
+        "units": [
+          {
+            "character_id": "TFT16_Qiyana",
+            "itemNames": [],
+            "name": "",
+            "rarity": 0,
+            "tier": 2
+          },
+          {
+            "character_id": "TFT16_Neeko",
+            "itemNames": [
+              "TFT_Item_Redemption",
+              "TFT_Item_RedBuff",
+              "TFT_Item_NegatronCloak"
+            ],
+            "name": "",
+            "rarity": 1,
+            "tier": 3
+          },
+          {
+            "character_id": "TFT16_Vi",
+            "itemNames": [],
+            "name": "",
+            "rarity": 1,
+            "tier": 2
+          },
+          {
+            "character_id": "TFT16_Bard",
+            "itemNames": [],
+            "name": "",
+            "rarity": 1,
+            "tier": 2
+          },
+          {
+            "character_id": "TFT16_Orianna",
+            "itemNames": [],
+            "name": "",
+            "rarity": 1,
+            "tier": 3
+          },
+          {
+            "character_id": "TFT16_Milio",
+            "itemNames": [
+              "TFT_Item_StatikkShiv",
+              "TFT_Item_AdaptiveHelm"
+            ],
+            "name": "",
+            "rarity": 2,
+            "tier": 2
+          },
+          {
+            "character_id": "TFT16_Nidalee",
+            "itemNames": [],
+            "name": "",
+            "rarity": 4,
+            "tier": 1
+          }
+        ],
+        "win": false
+      },
+      {
+        "companion": {
+          "content_ID": "53b3dbf9-5583-4d01-9ca3-02f85cf5d688",
+          "item_ID": 19030,
+          "skin_ID": 30,
+          "species": "PetDSSquid"
+        },
+        "gold_left": 2,
+        "last_round": 37,
+        "level": 10,
+        "missions": {
+          "PlayerScore2": 211
+        },
+        "placement": 1,
+        "players_eliminated": 2,
+        "puuid": "wvo7ATRgMQVCeBq6vQSYAlz_nxfzuMG82I-wL1cagT4Ud6d6sycXo0K5eC6pnbazVhptndqfoLg6TA",
+        "riotIdGameName": "LowTideTft",
+        "riotIdTagline": "wave",
+        "time_eliminated": 2119.373779296875,
+        "total_damage_to_players": 175,
+        "traits": [
+          {
+            "name": "TFT16_Bilgewater",
+            "num_units": 5,
+            "style": 2,
+            "tier_current": 2,
+            "tier_total": 4
+          },
+          {
+            "name": "TFT16_Blacksmith",
+            "num_units": 1,
+            "style": 3,
+            "tier_current": 1,
+            "tier_total": 1
+          },
+          {
+            "name": "TFT16_Brawler",
+            "num_units": 2,
+            "style": 1,
+            "tier_current": 1,
+            "tier_total": 3
+          },
+          {
+            "name": "TFT16_Glutton",
+            "num_units": 1,
+            "style": 3,
+            "tier_current": 1,
+            "tier_total": 1
+          },
+          {
+            "name": "TFT16_Gunslinger",
+            "num_units": 2,
+            "style": 1,
+            "tier_current": 1,
+            "tier_total": 2
+          },
+          {
+            "name": "TFT16_Juggernaut",
+            "num_units": 2,
+            "style": 1,
+            "tier_current": 1,
+            "tier_total": 3
+          },
+          {
+            "name": "TFT16_KindredUnique",
+            "num_units": 1,
+            "style": 3,
+            "tier_current": 1,
+            "tier_total": 1
+          },
+          {
+            "name": "TFT16_Rapidfire",
+            "num_units": 2,
+            "style": 1,
+            "tier_current": 1,
+            "tier_total": 4
+          },
+          {
+            "name": "TFT16_ShyvanaUnique",
+            "num_units": 1,
+            "style": 3,
+            "tier_current": 1,
+            "tier_total": 1
+          },
+          {
+            "name": "TFT16_Soulbound",
+            "num_units": 1,
+            "style": 3,
+            "tier_current": 1,
+            "tier_total": 1
+          },
+          {
+            "name": "TFT16_Warden",
+            "num_units": 2,
+            "style": 1,
+            "tier_current": 1,
+            "tier_total": 4
+          }
+        ],
+        "units": [
+          {
+            "character_id": "TFT16_Illaoi",
+            "itemNames": [],
+            "name": "",
+            "rarity": 0,
+            "tier": 1
+          },
+          {
+            "character_id": "TFT16_TwistedFate",
+            "itemNames": [],
+            "name": "",
+            "rarity": 1,
+            "tier": 2
+          },
+          {
+            "character_id": "TFT16_Nautilus",
+            "itemNames": [
+              "TFT16_Item_Bilgewater_CaptainsBrew",
+              "TFT16_Item_Bilgewater_FirstMatesFlintlock"
+            ],
+            "name": "",
+            "rarity": 2,
+            "tier": 2
+          },
+          {
+            "character_id": "TFT16_MissFortune",
+            "itemNames": [
+              "TFT_Item_MadredsBloodrazor",
+              "TFT_Item_InfinityEdge",
+              "TFT_Item_GuardianAngel"
+            ],
+            "name": "",
+            "rarity": 4,
+            "tier": 3
+          },
+          {
+            "character_id": "TFT16_Ornn",
+            "itemNames": [
+              "TFT_Item_Artifact_LichBane",
+              "TFT_Item_Artifact_VoidGauntlet",
+              "TFT_Item_FrozenHeart"
+            ],
+            "name": "",
+            "rarity": 6,
+            "tier": 1
+          },
+          {
+            "character_id": "TFT16_Kindred",
+            "itemNames": [
+              "TFT_Item_LastWhisper",
+              "TFT_Item_GuinsoosRageblade",
+              "TFT_Item_Quicksilver"
+            ],
+            "name": "",
+            "rarity": 6,
+            "tier": 2
+          },
+          {
+            "character_id": "TFT16_Lucian",
+            "itemNames": [
+              "TFT_Item_Artifact_StatikkShiv",
+              "TFT_Item_TearOfTheGoddess"
+            ],
+            "name": "",
+            "rarity": 6,
+            "tier": 1
+          },
+          {
+            "character_id": "TFT16_Shyvana",
+            "itemNames": [
+              "TFT_Item_UnstableConcoction",
+              "TFT_Item_GuardianAngel",
+              "TFT_Item_RedBuff"
+            ],
+            "name": "",
+            "rarity": 6,
+            "tier": 1
+          },
+          {
+            "character_id": "TFT16_Shyvana",
+            "itemNames": [],
+            "name": "",
+            "rarity": 6,
+            "tier": 1
+          },
+          {
+            "character_id": "TFT16_TahmKench",
+            "itemNames": [
+              "TFT16_Item_Bilgewater_PileOCitrus",
+              "TFT_Item_FrozenHeart",
+              "TFT_Item_DragonsClaw"
+            ],
+            "name": "",
+            "rarity": 6,
+            "tier": 2
+          }
+        ],
+        "win": true
+      }
+    ],
+    "queueId": 1100,
+    "queue_id": 1100,
+    "tft_game_type": "standard",
+    "tft_set_core_name": "TFTSet16",
+    "tft_set_number": 16
+  }
+}

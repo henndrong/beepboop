@@ -1,0 +1,15 @@
+services:
+  db:
+    image: postgres:16
+    container_name: tft_db
+    environment:
+      POSTGRES_USER: tft
+      POSTGRES_PASSWORD: tft
+      POSTGRES_DB: tft
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
