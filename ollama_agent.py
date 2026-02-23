@@ -53,7 +53,7 @@ def _decode_mcp_tool_result(result: Any) -> Any:
     raise RuntimeError("MCP tool returned no content")
 
 
-async def _best_second_items_mcp(unit_id: str, required_item: str, min_games: int = 1):
+async def _call_mcp_tool(tool_name: str, tool_args: Dict[str, Any]):
     env = dict(os.environ)
     env["API_BASE"] = API_BASE
 
@@ -67,26 +67,41 @@ async def _best_second_items_mcp(unit_id: str, required_item: str, min_games: in
     async with stdio_client(server_params) as (read_stream, write_stream):
         async with ClientSession(read_stream, write_stream) as session:
             await session.initialize()
-            result = await session.call_tool(
-                "best_second_items",
-                {
-                    "unit_id": unit_id,
-                    "required_item": required_item,
-                    "min_games": min_games,
-                },
-            )
+            result = await session.call_tool(tool_name, tool_args)
             return _decode_mcp_tool_result(result)
 
 
 # Strict MCP path: call tools only through the MCP server.
 def best_second_items(unit_id: str, required_item: str, min_games: int = 1):
-    return anyio.run(_best_second_items_mcp, unit_id, required_item, min_games)
+    return anyio.run(
+        _call_mcp_tool,
+        "best_second_items",
+        {"unit_id": unit_id, "required_item": required_item, "min_games": min_games},
+    )
+
+
+def best_item_pairs_given(unit_id: str, required_item: str, min_games: int = 1):
+    return anyio.run(
+        _call_mcp_tool,
+        "best_item_pairs_given",
+        {"unit_id": unit_id, "required_item": required_item, "min_games": min_games},
+    )
+
+
+def best_three_item_combos(unit_id: str, min_games: int = 1):
+    return anyio.run(
+        _call_mcp_tool,
+        "best_three_item_combos",
+        {"unit_id": unit_id, "min_games": min_games},
+    )
 
 SYSTEM = """You are a TFT stats assistant.
 You MUST respond in one of two ways:
 
-1) TOOL_CALL JSON exactly like:
+1) TOOL_CALL JSON exactly like one of these:
 {"tool":"best_second_items","args":{"unit_id":"TFT16_Yunara","required_item":"TFT_Item_GuinsoosRageblade","min_games":1}}
+{"tool":"best_item_pairs_given","args":{"unit_id":"TFT16_Yunara","required_item":"TFT_Item_GuinsoosRageblade","min_games":1}}
+{"tool":"best_three_item_combos","args":{"unit_id":"TFT16_Yunara","min_games":1}}
 
 2) FINAL JSON exactly like:
 {"final":"...your answer to the user..."}
@@ -95,6 +110,9 @@ Mapping rules:
 - "Guinsoo" or "Rageblade" => TFT_Item_GuinsoosRageblade
 - If user gives a unit name without prefix, guess the unit_id as TFT16_<Name> (e.g. Yunara -> TFT16_Yunara).
 If unsure, ask a short clarification in FINAL.
+- If user asks for "best 2nd item" given one item, use best_second_items.
+- If user asks for "best 2nd + 3rd pair" given one item, use best_item_pairs_given.
+- If user asks for "best 3 item combos/builds" for a unit, use best_three_item_combos.
 
 Always include sample size (games) in your final answer.
 If tool returns empty list, say we have insufficient sample in our dataset.
@@ -138,12 +156,16 @@ def main():
             continue
 
         # Tool call path
-        if obj.get("tool") == "best_second_items":
+        tool_name = obj.get("tool")
+        if tool_name in {"best_second_items", "best_item_pairs_given", "best_three_item_combos"}:
             args = obj.get("args", {})
             unit_id = args.get("unit_id")
             required_item = args.get("required_item")
-            if not unit_id or not required_item:
-                print("Tool call missing required args (unit_id, required_item).\n")
+            if not unit_id:
+                print("Tool call missing required arg (unit_id).\n")
+                continue
+            if tool_name in {"best_second_items", "best_item_pairs_given"} and not required_item:
+                print("Tool call missing required arg (required_item).\n")
                 continue
             # Keep tool behavior deterministic; do not let the model silently raise thresholds.
             requested_min_games = args.get("min_games")
@@ -157,7 +179,12 @@ def main():
                 min_games = max(DEFAULT_MIN_GAMES, min_games)
 
             try:
-                data = best_second_items(unit_id, required_item, min_games=min_games)
+                if tool_name == "best_second_items":
+                    data = best_second_items(unit_id, required_item, min_games=min_games)
+                elif tool_name == "best_item_pairs_given":
+                    data = best_item_pairs_given(unit_id, required_item, min_games=min_games)
+                else:
+                    data = best_three_item_combos(unit_id, min_games=min_games)
             except Exception as e:
                 print(f"MCP tool call failed: {e}\n")
                 continue
@@ -168,7 +195,7 @@ def main():
                 {
                     "role": "user",
                     "content": (
-                        f"TOOL_RESULT (min_games={min_games}): {json.dumps(data)}. "
+                        f"TOOL_RESULT {tool_name} (min_games={min_games}): {json.dumps(data)}. "
                         "Use this exact threshold in your answer. Do not mention any other threshold."
                     ),
                 }

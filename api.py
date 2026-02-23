@@ -129,3 +129,63 @@ def best_item_pairs_given(
         ]
     finally:
         conn.close()
+
+
+@app.get("/unit/{unit_id}/best_three_item_combos")
+def best_three_item_combos(
+    unit_id: str,
+    min_games: int = 3
+):
+    sql = """
+    WITH unit_items_agg AS (
+      SELECT
+        u.match_id,
+        u.puuid,
+        ARRAY_AGG(ui.item_name ORDER BY ui.item_name) AS items
+      FROM units u
+      JOIN unit_items ui
+        ON ui.match_id = u.match_id
+       AND ui.puuid = u.puuid
+       AND ui.unit_character_id = u.unit_character_id
+      WHERE u.unit_character_id = %s
+      GROUP BY u.match_id, u.puuid
+    ),
+    full_builds AS (
+      SELECT match_id, puuid, items
+      FROM unit_items_agg
+      WHERE array_length(items, 1) = 3
+    )
+    SELECT
+      items[1] AS item1,
+      items[2] AS item2,
+      items[3] AS item3,
+      COUNT(*) AS games,
+      AVG(CASE WHEN p.placement <= 4 THEN 1.0 ELSE 0.0 END) AS top4_rate,
+      AVG(p.placement) AS avg_place
+    FROM full_builds
+    JOIN participants p
+      ON p.match_id = full_builds.match_id AND p.puuid = full_builds.puuid
+    GROUP BY items
+    HAVING COUNT(*) >= %s
+    ORDER BY top4_rate DESC, avg_place ASC, games DESC
+    LIMIT 20;
+    """
+
+    conn = get_conn()
+    try:
+        with conn.cursor() as cur:
+            cur.execute(sql, (unit_id, min_games))
+            rows = cur.fetchall()
+        return [
+            {
+                "item1": r[0],
+                "item2": r[1],
+                "item3": r[2],
+                "games": r[3],
+                "top4_rate": float(r[4]),
+                "avg_place": float(r[5]),
+            }
+            for r in rows
+        ]
+    finally:
+        conn.close()
